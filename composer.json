@@ -1,13 +1,12 @@
 {
-    "name"       : "automattic/batcache",
+    "name"       : "10up/10up-batcache",
     "description": "A memcached HTML page cache for WordPress.",
-    "homepage"   : "https://github.com/Automattic/batcache",
-    "type"       : "wordpress-muplugin",
+    "homepage"   : "https://github.com/10up/10up-batcache",
+    "type"       : "wordpress-plugin",
     "license"    : "GPL-2.0+",
     "support"    : {
-			"issues": "https://github.com/Automattic/batcache/issues",
-			"forum":  "https://wordpress.org/support/plugin/batcache",
-			"source": "https://github.com/Automattic/batcache"
+			"issues": "https://github.com/10up/10up-batcache/issues",
+			"source": "https://github.com/10up/10up-batcache"
 	},
     "require"    : {
         "composer/installers": "~1.0"
