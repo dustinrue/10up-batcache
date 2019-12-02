@@ -336,7 +336,12 @@ class batcache {
                 if ( is_array($dimensions) ) {
                         ksort($dimensions);
                         foreach ( $dimensions as $key => $function ) {
-                                $fun = create_function('', $function);
+                                global $$function;
+                                $function = $$function;
+
+                                $func = function($function) {
+                                  return eval($function);
+                                };
                                 $value = $fun();
                                 $this->keys[$key] = $value;
                         }
