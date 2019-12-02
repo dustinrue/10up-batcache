@@ -339,10 +339,10 @@ class batcache {
                                 global $$function;
                                 $function = $$function;
 
-                                $func = function($function) {
+                                $fun = function($function) {
                                   return eval($function);
                                 };
-                                $value = $fun();
+                                $value = $fun($function);
                                 $this->keys[$key] = $value;
                         }
                 }
